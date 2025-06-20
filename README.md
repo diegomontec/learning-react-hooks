@@ -1,4 +1,4 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/1bbf5ded-61a0-4886-8c62-39f3f9eb7f38/deploy-status)](https://app.netlify.com/projects/learning-reacthooks/deploys)
+![Vercel Deploy](https://deploy-badge.vercel.app/vercel/Learning-react-hooks)
 
 ## Clone o repositório:
 
@@ -19,7 +19,3 @@ npm run dev
 ## Acesse no navegador:
 
 http://localhost:5174
-
-<br>
-
-### Em desenvolvimento!
