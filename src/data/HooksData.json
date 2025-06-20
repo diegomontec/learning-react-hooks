@@ -1,0 +1,38 @@
+[
+  {
+    "title": "useState",
+    "description": "Este componente demonstra como utilizar o React Hook useState para gerenciar o estado de um formulário de envio de mensagens via WhatsApp. O usuário pode preencher um número de telefone e uma mensagem, e ao clicar no botão, será direcionado para o WhatsApp com os dados preenchidos.",
+    "link": "/usestate"
+  },
+  {
+    "title": "useRef",
+    "description": "Este componente demonstra como utilizar o React Hook useRef para acessar diretamente um elemento DOM.",
+    "link": ""
+  },
+  {
+    "title": "useCallback",
+    "description": "Este componente demonstra como utilizar o React Hook useCallback para otimizar funções que são passadas como props, evitando re-renderizações desnecessárias.",
+    "link": ""
+  },
+  {
+    "title": "useContext",
+    "description": "Este componente demonstra como utilizar o React Hook useContext para compartilhar estado entre componentes sem precisar passar props manualmente.",
+    "link": ""
+  },
+  {
+    "title": "useEffect",
+    "description": "Este componente demonstra como utilizar o React Hook useEffect para executar efeitos colaterais, como chamadas de API ou manipulação de eventos, após a renderização do componente.",
+    "link": ""
+  },
+  {
+    "title": "UseMemo",
+    "description": "Este componente demonstra como utilizar o React Hook useMemo para memorizar valores calculados, evitando cálculos desnecessários em re-renderizações.",
+    "link": ""
+  },
+  {
+    "title": "useReducer",
+    "description": "Este componente demonstra como utilizar o React Hook useReducer para gerenciar estados complexos de forma mais eficiente que o useState.",
+    "link": ""
+  }
+]
+

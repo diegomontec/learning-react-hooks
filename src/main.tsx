@@ -4,9 +4,8 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { ThemeProvider, CssBaseline } from "@mui/material";
 
 import theme from "./theme";
-import App from "./App";
-import Index from "./hooks/page/Index.ts";
-import "./index.css";
+import App from "./App.tsx";
+import { ExportHooks } from "./hooks/pages/exportHooks.ts";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
@@ -15,7 +14,12 @@ createRoot(document.getElementById("root")!).render(
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<App />} />
-          <Route path="/usestate" element={<Index.SendWhatsApp />} />
+          <Route path="/usestate" element={<ExportHooks.SendWhatsApp />} />
+          <Route path="/useeffect" element={<ExportHooks.UseEffect />} />
+          <Route path="/usememo" element={<ExportHooks.UseMemo />} />
+          <Route path="/usecallback" element={<ExportHooks.UseCallback />} />
+          <Route path="/usecontext" element={<ExportHooks.UseContext />} />
+          <Route path="/useref" element={<ExportHooks.UseRef />} />
         </Routes>
       </BrowserRouter>
     </ThemeProvider>
