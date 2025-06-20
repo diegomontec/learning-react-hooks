@@ -7,7 +7,6 @@ const typedHooks: HookItem[] = hooks as HookItem[];
 const HookGrid = () => {
   return (
     <Box
-      p={4}
       sx={(theme) => ({
         display: "grid",
         gap: 2,
