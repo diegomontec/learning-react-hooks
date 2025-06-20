@@ -18,9 +18,8 @@ npm run dev
 
 ## Acesse no navegador:
 
-http://localhost:5174/usestate
+http://localhost:5174
 
+<br>
 
-
-
-### Este projeto está em desenvolvimento!
+### Em desenvolvimento!

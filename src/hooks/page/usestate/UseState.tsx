@@ -8,7 +8,8 @@ const SendWhatsApp = () => {
   const handlePhoneNumberChange = (
     event: React.ChangeEvent<HTMLInputElement>
   ) => {
-    setPhoneNumber("+55" + event.target.value);
+    const FormatNumber = event.target.value.replace(/\D/g, "");
+    setPhoneNumber("+55" + FormatNumber);
   };
 
   const handleMessageChange = (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -55,9 +56,10 @@ const SendWhatsApp = () => {
 
         <Box display="flex" flexDirection="column" gap={2}>
           <TextField
-            label="Telefone (com DDD)"
+            label="Telefone"
+            placeholder="DDD + digito + numero"
             variant="outlined"
-            type="number"
+            type="tel"
             onChange={handlePhoneNumberChange}
             fullWidth
           />
