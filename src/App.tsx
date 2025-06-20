@@ -5,7 +5,7 @@ import HookGrid from "./components/HookGrid";
 
 const App = () => {
   return (
-    <Box >
+    <Box p:"4">
       <PageTitle />
       <HookGrid />
     </Box>
