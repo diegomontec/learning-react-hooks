@@ -28,7 +28,6 @@ const SendWhatsApp = () => {
       flexDirection="row"
       justifyContent="flex-start"
       sx={{
-        p: 4,
         maxWidth: "100%",
       }}
     >
@@ -36,7 +35,7 @@ const SendWhatsApp = () => {
         sx={{
           maxWidth: 600,
           width: "100%",
-          pr: 4,
+          p: 4,
         }}
       >
         <Typography
