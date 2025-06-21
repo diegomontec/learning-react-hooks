@@ -1,7 +1,7 @@
 import { Box, Typography } from "@mui/material";
 
 const PageTitle = () => (
-  <Box sx={{ p: 4 }}>
+  <Box>
     <Typography
       variant="h4"
       sx={{
@@ -10,7 +10,7 @@ const PageTitle = () => (
         color: "text.primary",
       }}
     >
-      Explore os React Hooks
+      React Hooks
     </Typography>
   </Box>
 );
