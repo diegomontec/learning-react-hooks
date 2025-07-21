@@ -1,6 +1,6 @@
 import type { HookItem } from "../types/HookItem";
 
-const hookMap: Record<string, HookItem> = {
+export const HooksMap: Record<string, HookItem> = {
   usestate: {
     title: "useState",
     description:
@@ -74,6 +74,3 @@ const hookMap: Record<string, HookItem> = {
     link: "",
   },
 };
-
-
-export default hookMap;

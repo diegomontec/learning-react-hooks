@@ -6,7 +6,7 @@ import { ThemeProvider, CssBaseline } from "@mui/material";
 import theme from "./theme";
 import App from "./App.tsx";
 import { ExportHooks } from "./hooks/pages/exportHooks.ts";
-import hookMap from "./data/HooksMap.ts";
+import { HooksMap } from "./data/HooksMap.ts";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
@@ -17,7 +17,7 @@ createRoot(document.getElementById("root")!).render(
           <Route path="/" element={<App />} />
           <Route
             path="/usestate"
-            element={<ExportHooks.SendWhatsApp hook={hookMap.usestate} />}
+            element={<ExportHooks.SendWhatsApp hook={HooksMap.usestate} />}
           />
           {/* <Route
             path="/useeffect"

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Box, Typography, TextField, Button } from "@mui/material";
 import type { HookItem } from "../../../types/HookItem";
+import Footer from "../../../components/Footer/Footer";
 
 type HookUseStateProps = {
   hook: HookItem;
@@ -30,67 +31,68 @@ export const SendWhatsApp = ({ hook }: HookUseStateProps) => {
     <Box
       component="section"
       display="flex"
-      flexDirection="row"
-      justifyContent="flex-start"
+      flexDirection="column"
+      justifyContent="space-between"
       sx={{
-        maxWidth: "100%",
+        height: "100vh",
+        p: 4,
       }}
     >
-      <Box
-        sx={{
-          maxWidth: 600,
-          width: "100%",
-          p: 4,
-        }}
-      >
-        <Typography
-          variant="h4"
-          sx={{ fontWeight: "bold", letterSpacing: "0.05em", mb: 2 }}
+      <Box>
+        <Box
+          sx={{
+            maxWidth: 600,
+            width: "100%",
+          }}
         >
-          Exemplo prático de useState
-        </Typography>
-
-        <Typography variant="body1" sx={{ color: "#555", mb: 6 }}>
-          {hook.description_en}
-        </Typography>
-
-        <Box display="flex" flexDirection="column" gap={2}>
-          <TextField
-            label="Telefone"
-            placeholder="DDD + digito + numero"
-            variant="outlined"
-            type="tel"
-            onChange={handlePhoneNumberChange}
-            fullWidth
-          />
-
-          <TextField
-            label="Mensagem"
-            variant="outlined"
-            onChange={handleMessageChange}
-            fullWidth
-          />
-
-          <Button
-            variant="outlined"
-            onClick={handleSendClick}
-            sx={{
-              borderColor: "black",
-              color: "black",
-              textTransform: "none",
-              fontWeight: "bold",
-              "&:hover": {
-                backgroundColor: "#f5f5f5",
-                borderColor: "black",
-              },
-            }}
+          <Typography
+            variant="h4"
+            sx={{ fontWeight: "bold", letterSpacing: "0.05em", mb: 2 }}
           >
-            Enviar Mensagem
-          </Button>
+            Exemplo prático de useState
+          </Typography>
+
+          <Typography variant="body1" sx={{ color: "#555", mb: 6 }}>
+            {hook.description}
+          </Typography>
+
+          <Box display="flex" flexDirection="column" gap={2}>
+            <TextField
+              label="Telefone"
+              placeholder="DDD + digito + numero"
+              variant="outlined"
+              type="tel"
+              onChange={handlePhoneNumberChange}
+              fullWidth
+            />
+
+            <TextField
+              label="Mensagem"
+              variant="outlined"
+              onChange={handleMessageChange}
+              fullWidth
+            />
+
+            <Button
+              variant="outlined"
+              onClick={handleSendClick}
+              sx={{
+                borderColor: "black",
+                color: "black",
+                textTransform: "none",
+                fontWeight: "bold",
+                "&:hover": {
+                  backgroundColor: "#f5f5f5",
+                  borderColor: "black",
+                },
+              }}
+            >
+              Enviar Mensagem
+            </Button>
+          </Box>
         </Box>
       </Box>
+      <Footer />
     </Box>
   );
 };
-
-// export default SendWhatsApp;

@@ -5,10 +5,12 @@ import HookGrid from "./components/HookGrid/HookGrid";
 
 const App = () => {
   return (
-    <Box p={4}>
-      <PageTitle />
-      <HookGrid />
-    </Box>
+    <>
+      <Box p={4}>
+        <PageTitle />
+        <HookGrid />
+      </Box>
+    </>
   );
 };
 

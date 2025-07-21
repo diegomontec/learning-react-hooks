@@ -1,5 +1,5 @@
 import { Box, Typography, Paper, Link } from "@mui/material";
-import hookMap from "../../data/HooksMap";
+import { HooksMap } from '../../data/HooksMap'
 import type { HookItem } from "../../types/HookItem";
 import {
   gridStyles,
@@ -10,7 +10,7 @@ import {
   comingSoonStyles,
 } from "./HookGrid.styles";
 
-const hookList: HookItem[] = Object.values(hookMap);
+const hookList: HookItem[] = Object.values(HooksMap);
 
 const HookGrid = () => {
   return (
