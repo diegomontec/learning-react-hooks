@@ -1,7 +1,7 @@
 import { Box } from "@mui/material";
 
-import PageTitle from "./components/PageTitle";
-import HookGrid from "./components/HookGrid";
+import PageTitle from "./components/PageTitle/PageTitle";
+import HookGrid from "./components/HookGrid/HookGrid";
 
 const App = () => {
   return (

@@ -1,4 +1,4 @@
-import SendWhatsApp from "./usestate/UseState";
+import { SendWhatsApp } from "./usestate/UseState";
 import { UseCallback } from "./usecallback/UseCallback";
 import { UseContext } from "./usecontext/UseContext";
 import { UseEffect } from "./useeffect/UseEffect";

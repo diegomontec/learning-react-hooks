@@ -6,6 +6,7 @@ import { ThemeProvider, CssBaseline } from "@mui/material";
 import theme from "./theme";
 import App from "./App.tsx";
 import { ExportHooks } from "./hooks/pages/exportHooks.ts";
+import hookMap from "./data/HooksMap.ts";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
@@ -14,12 +15,30 @@ createRoot(document.getElementById("root")!).render(
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<App />} />
-          <Route path="/usestate" element={<ExportHooks.SendWhatsApp />} />
-          <Route path="/useeffect" element={<ExportHooks.UseEffect />} />
-          <Route path="/usememo" element={<ExportHooks.UseMemo />} />
-          <Route path="/usecallback" element={<ExportHooks.UseCallback />} />
-          <Route path="/usecontext" element={<ExportHooks.UseContext />} />
-          <Route path="/useref" element={<ExportHooks.UseRef />} />
+          <Route
+            path="/usestate"
+            element={<ExportHooks.SendWhatsApp hook={hookMap.usestate} />}
+          />
+          {/* <Route
+            path="/useeffect"
+            element={<ExportHooks.UseEffect hook={hookMap.useeffect} />}
+          />
+          <Route
+            path="/usememo"
+            element={<ExportHooks.UseMemo hook={hookMap.usememo} />}
+          />
+          <Route
+            path="/usecallback"
+            element={<ExportHooks.UseCallback hook={hookMap.usecallback} />}
+          />
+          <Route
+            path="/usecontext"
+            element={<ExportHooks.UseContext hook={hookMap.usecontext} />}
+          />
+          <Route
+            path="/useref"
+            element={<ExportHooks.UseRef hook={hookMap.useref} />}
+          /> */}
         </Routes>
       </BrowserRouter>
     </ThemeProvider>

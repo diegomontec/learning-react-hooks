@@ -1,7 +1,12 @@
 import { useState } from "react";
 import { Box, Typography, TextField, Button } from "@mui/material";
+import type { HookItem } from "../../../types/HookItem";
 
-const SendWhatsApp = () => {
+type HookUseStateProps = {
+  hook: HookItem;
+};
+
+export const SendWhatsApp = ({ hook }: HookUseStateProps) => {
   const [phoneNumber, setPhoneNumber] = useState("");
   const [message, setMessage] = useState("");
 
@@ -46,11 +51,7 @@ const SendWhatsApp = () => {
         </Typography>
 
         <Typography variant="body1" sx={{ color: "#555", mb: 6 }}>
-          Este componente demonstra como utilizar o React Hook{" "}
-          <strong>useState</strong> para gerenciar o estado de um formulário de
-          envio de mensagens via WhatsApp. O usuário pode preencher um número de
-          telefone e uma mensagem, e ao clicar no botão, será direcionado para o
-          WhatsApp com os dados preenchidos.
+          {hook.description_en}
         </Typography>
 
         <Box display="flex" flexDirection="column" gap={2}>
@@ -92,4 +93,4 @@ const SendWhatsApp = () => {
   );
 };
 
-export default SendWhatsApp;
+// export default SendWhatsApp;
